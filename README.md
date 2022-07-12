@@ -1,68 +1,59 @@
-# Commands:
+# TypeScript Library
+
+## Description
+This repo is dedicated to learning and keeping up to date with TypeScript and corresponding technologies. Starting with the basics, including some guidance on how to apporach Typescript if you have a decent understanding of Javascript. Contributions welcome!!! Thank you for visiting and please don't forget to leave a ⭐️, and watch 👁 or fork ⑂ as you wish :) 
+
+## Installation:
 ```bash
 npm install --save-dev 
 ```
-Exclusive to this project to make it a development only dependency, a tool which does not containt any code which will be part of our main code.
 
-
-# Nested Objects & Types:
-Of course object types can also be created for nested objects.
-
-Let's say you have this JavaScript object:
-
-```js
-const product = {
-  id: 'abc1',
-  price: 12.99,
-  tags: ['great-offer', 'hot-and-new'],
-  details: {
-    title: 'Red Carpet',
-    description: 'A great carpet - almost brand-new!'
-  }
-}
-```
-This would be the type of such an object:
-```js
-{
-  id: string;
-  price: number;
-  tags: string[];
-  details: {
-    title: string;
-    description: string;
-  }
-}
-So you have an object type in an object type so to say.
-```
-
-# Type Aliases & Object Types
-Type aliases can be used to "create" your own types. You're not limited to storing union types though - you can also provide an alias to a (possibly complex) object type.
-
-For example:
-
-type User = { name: string; age: number };
-const u1: User = { name: 'Max', age: 30 }; // this works!
-This allows you to avoid unnecessary repetition and manage types centrally.
-
-For example, you can simplify this code:
-```js
-function greet(user: { name: string; age: number }) {
-  console.log('Hi, I am ' + user.name);
-}
- 
-function isOlder(user: { name: string; age: number }, checkAge: number) {
-  return checkAge > user.age;
-}
-```
-To:
-```js
-type User = { name: string; age: number };
- 
-function greet(user: User) {
-  console.log('Hi, I am ' + user.name);
-}
- 
-function isOlder(user: User, checkAge: number) {
-  return checkAge > user.age;
-}
-```
+<table class="tg" style="width:90px; text-align:center;">
+<thead>
+  <tr>
+    <th class="tg-0pky" colspan="8">Sample Apps</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+   <td class="tg-0pky" colspan="1">
+      <a href="https://github.com/mathcodes/TS/blob/main/basic.ts">Basic</a>
+    </td>
+     <td class="tg-0pky" colspan="1">
+      <a href="https://github.com/mathcodes/TS/blob/main/basics.ts">Basics</a>
+    </td>
+    <td class="tg-0pky" colspan="1">
+      <a href="https://github.com/mathcodes/TS/blob/main/coreTypes.ts">Core Types</a>
+    </td>
+    <td class="tg-0pky" colspan="1">
+      <a href="https://github.com/mathcodes/TS/blob/main/functions.ts">Functions</a>
+    </td>
+    <td class="tg-0pky" colspan="1">
+      <a href="https://github.com/mathcodes/TS/blob/main/functions2.ts">Functions2</a>
+    </td>
+    <td class="tg-0pky" colspan="1">
+      <a href="https://github.com/mathcodes/TS/blob/main/neverType.js">Never Type</a>
+    </td>
+    <td class="tg-0pky" colspan="1">
+      <a href="https://github.com/mathcodes/TS/blob/main/objs-arrays-enums.ts">Objects, Arrays, Enums</a>
+    </td>
+    <td class="tg-0pky" colspan="1">
+      <a href="https://github.com/mathcodes/TS/blob/main/unionAliasesCustom.ts">Unions, Aliases</a>
+    </td>
+    </tr>
+    <tr>
+    <td class="tg-0pky" colspan="1">
+      <a href="https://github.com/mathcodes/TS/blob/main/voidReturn.js">Void Return</a>
+    </td>
+      <td class="tg-0pky" colspan="1">
+      <a href="https://github.com/mathcodes/TS/blob/main/voidReturnless.ts">Void Returnless</a>
+    </td>
+    <td class="tg-0pky" colspan="1">
+      <a href="https://github.com/mathcodes/react-native-apps/tree/main/sample-apps/rn-numbers"> </a>
+    </td>
+    <td class="tg-0pky" colspan="1">
+      <a href="https://github.com/mathcodes/react-native-apps/tree/main/sample-apps/rn-redux"> </a>
+    </td>
+ </tr>
+</tbody>
+</table>
