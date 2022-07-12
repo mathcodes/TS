@@ -11,7 +11,7 @@ npm install --save-dev
 <table class="tg" style="width:90px; text-align:center;">
 <thead>
   <tr>
-    <th class="tg-0pky" colspan="8">Sample Apps</th>
+    <th class="tg-0pky" colspan="8">Typescript Fundamentals</th>
   </tr>
 </thead>
 <tbody>
